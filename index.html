@@ -1,72 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport"  content="width=device-width, initial-scale=1.0">
-
-<script src="https://kit.fontawesome.com/5855682a92.js" crossorigin="anonymous"></script>
 <style>
-header{text-align:center;
-width:100%;
-heigth:400px;
-padding:0;
-margin-left:0;
-background-color:darkblue;
 
-color:white;
-font-family:times new roman;
-font-size:25px;
-position:fixed;
-}
-
-
-
-ul{
-list-style-type:none;
-overflow:hidden;
-margin:0;
-padding:0;
-position:fixed;
-top:90px;
-width:100%;
-background-color:darkblue;
-
-
-
-}
-
-
-li{float:right;
-border-right:o.5px solid white;}
-
-li a{text-decoration:none;
-padding:10px 8px;
+.header{
 text-align:center;
-display:inline;
-color:white;}
+font-size:50px;
+background-color:gray;
+padding:18px;
+color:maroon;
+position:fixed;
+width:100%;
+margin-top:0px;
+}
 
-li a:hover:not(active){background-color:green;}
+body{
+animation-name:body;
+animation-duration:2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes body{
+from{background-color:#f3eeaf;}
+to{background-color:darkkhaki;}
+}
+
+.class1{
+width:80%;
+margin-left:100px;
+margin-top:100px;
+background-color:white;
+padding:15px;
+float:left;}
+
+.class2{
+width:80%;
+margin-left:100px;
+margin-top:20px;
+background-color:white;
+padding:15px;
+float:left;}
+
+
+a:link, a:visited {
+  background-color:goldenrod;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left:30vw;
+}
+
+a:hover, a:active {
+  background-color:blue;}
+  
+td{width:130px;
+padding-left:30px;}
+table{
+padding:10px;}
+
+
+@media screen and ( max-width:789px )
+{
+.header{position:fixed;}
+.class1{
+width:80%;
+margin-left:40px;
+margin-right:40px;}
+.button{margin-left:-40px;}
+}
 
 </style>
 </head>
-<body style="padding-bottom:2000px; background-color:lightseagreen;" >
-<header>
-<h1> student database </h1>
+<body style="background-color:#f3eeaf;">
+<div class="header">
+CSE 2k20 </div><br>
+
+
+<div class="class1">
+<H1>Data Structure and Algorithm</h1>
+<table>
+<tr>
+<th>day </th>
+<th>Timing </th>
+</tr>
+<tr>
+<td>monday</td>
+<td>1.30 - 4 PM</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>9.15 - 10.45AM</td>
+</tr>
+<tr>
+<td>friday</td>
+<td>9.15- 10.45AM</td>
+</tr>
 
 
 
+</table>
+<div class="button">
+<a href="http://meet.google.com/tug-ockn-wjy ">press here to join </a>
+</div>
+</div>
 
-<ul>
-<li><a href="#" ><i class="fas fa-sign-out-alt"></i>Logout</a> </li>
-<li><a href="#" ><i class="fas fa-user-circle"></i>profile </a></li>
-<li><a href="#" ><i class="fas fa-columns"></i> dashboard </a></li>
-<li><a href="#" > <i class="fas fa-home"></i>Home  </a></li>
-</ul>
+<div class="class2" >
+<H1>Operating system</h1>
+<table>
+<tr>
+<th>day </th>
+<th>Timing </th>
+</tr>
+<tr>
+<td>monday</td>
+<td>9.15 - 10.45 AM</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>11 - 12.30 AM</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>1.30 - 4.30 PM</td>
+</tr>
 
 
-</header>
+</table>
+<div class="button">
+<a href="http://meet.google.com/tug-ockn-wjy ">press here to join </a>
+</div>
+</div>
 
-
-
-
-</body >
+</body>
 </html>
